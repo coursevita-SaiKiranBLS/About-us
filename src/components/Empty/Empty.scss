@@ -1,0 +1,76 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+  flex-wrap: wrap; 
+  font-family: 'Outfit',sans-serif;
+  .middle-text{
+    text-align: center;
+
+    span{
+      color: orangered;
+    }
+  }
+  .middle-subtext{
+    text-align: center;
+    width: 90%;
+    font-family: 'Outfit',sans-serif;
+  }
+  .cards-container {
+    position: relative;
+    width: 250px;
+    height: 150px;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('../../assets/card.svg') no-repeat center center;
+    background-size: cover;
+    margin-bottom: 15px;
+
+    .logo {
+      width: 40px; 
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .head-text {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .para-text {
+      font-size: 13.5px;
+      color: #666;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .cards-container {
+      width: 70%; 
+      height: auto;
+      padding: 20px;
+    }
+
+    .logo {
+      width: 40px;
+      margin-bottom: 8px;
+    }
+
+    .head-text {
+      font-size: 5px; 
+      margin-bottom: 8px;
+    }
+
+    .para-text {
+      font-size: 4px; 
+  }
+}
+}

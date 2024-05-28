@@ -1,0 +1,23 @@
+.bottom-container{
+     background-image: url('../../assets/bottom.svg');
+ 
+     font-family: 'Outfit',sans-serif;
+     font-weight: 400;
+     .bottom-head{
+      text-align: center;
+      color: white;
+      margin-bottom: 5px;
+     }
+     .bottom-subtext{
+      text-align: center;
+      color: white;
+      margin-bottom: 5px;
+
+     }
+     .buttom-botton{
+       margin-bottom: 5px;
+       width: 10%;
+       font-size: 70%;
+     }
+
+}

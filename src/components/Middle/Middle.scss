@@ -1,0 +1,189 @@
+.background {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+
+  .Text-box {
+    font-family: "Outfit", sans-serif;
+
+    .title {
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 15px;
+
+      span {
+        color: orangered;
+      }
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+
+    .paragraph {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.scroll-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 40%;
+  overflow: hidden;
+  position: relative;
+
+  .scroll-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    animation: scroll 9s linear infinite;
+
+    .scroll-image {
+      width: 90%;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+  
+}
+
+@media only screen and (max-width: 900px) {
+
+  .scroll-container {
+    display: none !important;
+  }
+  @keyframes scroll-horizontal {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+    // 50% {
+    //   transform: translateY(-100%);
+    // }
+  }
+
+  .background {
+    .Text-box {
+      padding: 30px;
+      font-family: "Outfit", sans-serif;
+      text-align: center;
+      margin-bottom: 40%;
+
+
+      .title {
+        width: 160%;
+        text-align: center;
+        font-size: clamp(20px, 5vw, 35px);
+        margin-bottom: 15px;
+
+        span {
+          color: orangered;
+        }
+      }
+
+      .subtitle {
+        width: 160%;
+        text-align: center;
+        font-size: clamp(15px, 4vw, 25px);
+        margin-bottom: 15px;
+      }
+
+      .paragraph {
+        width: 160%;
+        text-align: center;
+        font-size: clamp(10px, 2vw, 25px);
+        margin-bottom: 15px;
+      }
+    }
+    
+  
+  }
+  .horizontal-scroll-images {
+    animation: scroll-horizontal 10s linear infinite;
+    margin-bottom:10%;
+  
+    .horizontal-scroll-item {
+      width: 90%;      
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  .scroll-container {
+    display: none !important;
+  }
+  @keyframes scroll-horizontal {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+    // 50% {
+    //   transform: translateY(-100%);
+    // }
+  }
+
+  .background {
+    .Text-box {
+      padding: 10px;
+      font-family: "Outfit", sans-serif;
+      text-align: center;
+      margin-bottom: 40%;
+
+
+      .title {
+        width: 200%;
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 15px;
+
+        span {
+          color: orangered;
+        }
+      }
+
+      .subtitle {
+        width: 200%;
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 15px;
+      }
+
+      .paragraph {
+        width: 200%;
+        text-align: center;
+        font-size: 10px;
+        margin-bottom: 15px;
+      }
+    }
+    
+  
+  }
+  .horizontal-scroll-images {
+    animation: scroll-horizontal 10s linear infinite;
+    margin-top:10%;
+  
+    .horizontal-scroll-item {
+      width: 70%;      
+    }
+  }
+}
